@@ -54,16 +54,17 @@ registerPaint(
       return { alpha: true };
     }
 
-    /*
-     use this function to retrieve any custom properties (or regular properties, such as 'height')
-     defined for the element, return them in the specified array
+  /*
+    use this function to retrieve any custom properties
+    (or regular properties, such as 'height') defined for the element,
+    return them in the specified array
   */
     static get inputProperties() {
       return ["--boxColor", "--widthSubtractor"];
     }
 
     paint(ctx, size, props) {
-      /*
+    /*
        ctx -> drawing context
        size -> paintSize: width and height
        props -> properties: get() method
